@@ -10,7 +10,7 @@
         "pathMode": "open-api"
       },
       "post": {
-        "summary": "login",
+        "summary": "Login",
         "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
         "x-zuplo-route": {
           "corsPolicy": "none",
