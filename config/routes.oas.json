@@ -1,0 +1,36 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "My Zuplo API"
+  },
+  "paths": {
+    "/login": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "post": {
+        "summary": "login",
+        "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "urlRewriteHandler",
+            "module": "$import(@zuplo/runtime)",
+            "options": {
+              "rewritePattern": "https://ncumftsjgcotcoszuhiw.supabase.co/auth/v1/token"
+            }
+          },
+          "policies": {
+            "inbound": [
+              "set-query-params-inbound-1",
+              "set-query-params-inbound",
+              "rate-limit-inbound"
+            ]
+          }
+        },
+        "operationId": "5916f373-fe7c-4b4d-b9c9-3b85f2a2bc14"
+      }
+    }
+  }
+}
